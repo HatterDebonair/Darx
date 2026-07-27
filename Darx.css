@@ -6,7 +6,8 @@
    ============================================================ */
 :root{
   /* ---- IMAGES ---- */
-  --img-crest:    url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Dark%20Name%20Logo.png");
+  --img-crest:    url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Dark%20Name%20Logo.png");  /* wordmark — replaces Chub's site logo */
+  --img-mark:     url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Darx%20Logo.png");         /* face mark — card header */
   --img-pfpgif:   url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/DarxPFP.gif");  /* animated GIF shown in place of the card image */
   --img-bg:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/DarxBG.png");   /* page + card background */
   --bg-opacity:   0.20;   /* how visible the background is (0 = hidden, 1 = full) */
@@ -31,6 +32,7 @@
   --t-kick:     "Second Year · Class F";
   --t-tag:      "The Shadow Broker, Trader of Information. Uncover the shadows and reveal the Who of this girl.";
   --t-theme:    "Who";
+  --t-theme2:   "Midnight after Darx";
   --t-overview: "Long come and gone by the fall of the dark.";
 
   /* ---- CHAPTERS I–V (titles + one-line hover reveals) ---- */
@@ -70,7 +72,7 @@
 }
 .dx-in{position:relative;z-index:3;padding:40px 34px 44px}
 .dx-top{display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--dim);text-transform:uppercase}
-.dx-top .crest{width:auto;height:22px;background:var(--img-crest) left center/contain no-repeat;flex:none;width:46px}
+.dx-top .crest{width:26px;height:26px;background:var(--img-mark) left center/contain no-repeat;flex:none}
 .dx-top .tl::after{content:var(--t-topleft)}
 .dx-top .id{margin-left:auto;color:var(--red)}
 .dx-top .id::after{content:"// " var(--t-id)}
@@ -92,7 +94,9 @@
 .dx-over .bar{flex:none;width:2px;background:var(--red);opacity:.7}
 .dx-over p{margin:0;font-size:16.5px;line-height:1.6;color:#b7b3ac;font-style:italic;white-space:pre-line}
 .dx-over p::after{content:var(--t-overview)}
-.dx-theme{display:flex;align-items:center;gap:14px;border:1px solid var(--line);padding:9px 14px;margin:24px 0;flex-wrap:wrap}
+.dx-theme{border:1px solid var(--line);padding:2px 14px;margin:24px 0}
+.dx-trk{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:9px 0}
+.dx-trk + .dx-trk{border-top:1px solid var(--line)}
 .dx-eq{display:flex;align-items:flex-end;gap:2px;height:14px;flex:none}
 .dx-eq i{width:2px;background:var(--red);animation:dxeq .9s ease-in-out infinite}
 .dx-eq i:nth-child(2){animation-delay:.15s}.dx-eq i:nth-child(3){animation-delay:.3s}.dx-eq i:nth-child(4){animation-delay:.45s}
@@ -100,7 +104,8 @@
 .dx-tlbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--dim);text-transform:uppercase;flex:none}
 .dx-tlbl::after{content:"Theme \2014 "}
 .dx-tlbl b{color:var(--bone);font-weight:400}
-.dx-tlbl b::after{content:var(--t-theme)}
+.dx-trk.t1 .dx-tlbl b::after{content:var(--t-theme)}
+.dx-trk.t2 .dx-tlbl b::after{content:var(--t-theme2)}
 .dx-theme audio{flex:1;min-width:180px;height:30px;filter:grayscale(1) invert(.9) contrast(.9)}
 .dx-lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:4px;color:var(--dim);text-transform:uppercase;margin:34px 0 12px;display:flex;align-items:center;gap:12px}
 .dx-lbl::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -159,6 +164,10 @@
 body,#root,main{background:#09080a!important}
 body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:var(--img-bg) center/cover no-repeat fixed;opacity:calc(var(--bg-opacity) * 0.7);filter:grayscale(.4) contrast(1.05) brightness(.6)}
 .ant-col.ant-col-lg-6,.ant-col.ant-col-lg-18{flex:0 0 100%!important;max-width:760px!important;margin:0 auto!important}
+/* --- DARX wordmark in place of the Chub site logo (top-left) --- */
+a:has(> img[src*="logo_cataract"]){display:inline-flex!important;align-items:center!important;width:118px!important;height:40px!important;background:var(--img-crest) left center/contain no-repeat!important}
+a:has(> img[src*="logo_cataract"]) img{opacity:0!important}
+
 /* --- animated GIF in place of the character card image --- */
 .ant-ribbon-wrapper .ant-image:has(img[src*="chara_card_v2"]){background-image:var(--img-pfpgif)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;border:1px solid var(--redd)!important;border-radius:0!important;box-shadow:0 0 26px rgba(195,31,46,.18)!important;transition:box-shadow .3s ease!important}
 .ant-ribbon-wrapper .ant-image:has(img[src*="chara_card_v2"]):hover{box-shadow:0 0 38px rgba(195,31,46,.34)!important}
