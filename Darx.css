@@ -237,6 +237,6 @@ div.ant-row:has(> h3.ant-typography){display:none!important}
 .mt-2 > .msg-mkdn-container{display:none!important}
 .ant-tag{background:transparent!important;border:1px solid var(--redd)!important;color:#b8b4ad!important;border-radius:0!important;font-family:'IBM Plex Mono',monospace!important;text-transform:uppercase!important;letter-spacing:1px!important;padding:1px 8px!important}
 .ant-tag.ant-tag-error{border-color:var(--red)!important;color:var(--red)!important}
-.mt-2 a[href*="/users/"]{display:inline-flex!important;align-items:center!important;color:var(--red)!important;font-family:'IBM Plex Mono',monospace!important;letter-spacing:1px!important}
-.mt-2 a[href*="/users/"]::before{content:""!important;display:inline-block!important;width:18px!important;height:18px!important;margin-right:8px!important;background:url('https://file.garden/aGfo9JTdVktTM-Ys/Senfuir%20Logo.png') center/cover no-repeat!important;border:1px solid var(--redd)!important}
+.mt-2 a[href*="/users/"]:not(.dx-sancay){display:inline-flex!important;align-items:center!important;color:var(--red)!important;font-family:'IBM Plex Mono',monospace!important;letter-spacing:1px!important}
+.mt-2 a[href*="/users/"]:not(.dx-sancay)::before{content:""!important;display:inline-block!important;width:18px!important;height:18px!important;margin-right:8px!important;background:url('https://file.garden/aGfo9JTdVktTM-Ys/Senfuir%20Logo.png') center/cover no-repeat!important;border:1px solid var(--redd)!important}
 .mt-4.text-right .ant-btn{border-radius:0!important;border:1px solid var(--redd)!important;background:transparent!important;color:var(--bone)!important;font-family:'IBM Plex Mono',monospace!important;text-transform:uppercase!important;letter-spacing:1px!important}
