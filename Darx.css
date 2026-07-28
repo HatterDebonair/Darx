@@ -169,6 +169,7 @@
 .dx-row:hover .dx-chip{opacity:1}
 .dx-chip.nsfw{color:var(--red);border-color:var(--redd)}
 .dx-chip.collab{color:#d9a520;border-color:#8a6a12}
+.dx-chip.secret{color:#4ea3d9;border-color:#255f85}
 .dx-note{display:flex;gap:16px;max-width:560px}
 .dx-note .bar{flex:none;width:2px;background:var(--dim)}
 .dx-note p{margin:0;font-size:15px;line-height:1.6;color:#9d9992;font-style:italic;white-space:pre-line}
