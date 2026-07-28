@@ -17,6 +17,14 @@
   --img-t3:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro3.png");
   --img-t4:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro4.png");
   --img-t5:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro5A.png");
+  --img-t6:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro6B.png");
+  --img-t7:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro7C.png");
+  --img-t8:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro8A.png");
+  --img-t9:       url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro9A.png");
+  --img-t10:      url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Intro5A.png");   /* <- Chapter X image (placeholder) */
+
+  --img-lore:     url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Arcanith%20Lorebook.png");
+  --img-discord:  url("https://file.garden/aGfo9JTdVktTM-Ys/Darx/Discord%20Banner.png");
 
   /* Chapter image framing — lower % shows more of the TOP of the image.
      (portrait art usually wants 10–25%; landscape art is fine at "center") */
@@ -25,6 +33,11 @@
   --pos-t3: center 14%;
   --pos-t4: center;
   --pos-t5: center 14%;
+  --pos-t6: center;
+  --pos-t7: center;
+  --pos-t8: center;
+  --pos-t9: center;
+  --pos-t10: center 14%;
 
   /* ---- TEXT ---- */
   --t-topleft:  "Grand Academy of Arcanith";
@@ -46,6 +59,16 @@
   --t-t4-line:  "The loudest girl at Arcanith has nothing to say today.";
   --t-t5-title: "Darkness' Soft Embrace";
   --t-t5-line:  "You're offered a deal that no one would refuse.";
+  --t-t6-title: "Business Without You";
+  --t-t6-line:  "Say nothing. Please.";
+  --t-t7-title: "Down Bad Bathhouse";
+  --t-t7-line:  "Ever the shining example of Refrain.";
+  --t-t8-title: "After Hours Training";
+  --t-t8-line:  "Caught looking. Now she has to fight.";
+  --t-t9-title: "Deal with Horns";
+  --t-t9-line:  "An offer so criminal, it's a steal.";
+  --t-t10-title:"No Fun in the Sun";
+  --t-t10-line: "No shade for forty feet.";
 
   /* ---- NOTES + FOOTER ---- */
   --t-notes: "Hello Hello, long time no see again! I've been busy as always — this is a hobby after all. A couple things: this is a botjam bot I made for Sancay's server. I figured it would be a good way to get back into the swing of things and also show off the new style of things I'm doing. I think presentation is a big thing, so I've polished things up alongside my profile page! That being said, I don't think bot production will be any faster than what I'm doing, but that doesn't mean I won't release things when I can.\A\AOn another note: with how things are on my page, with a good chunk of my bots not available despite not really having any major issue, you can now access them all through my site — as well as find out first whenever I release a bot, either through Sancay's server, Sanctum, or my own server (it's not really a social place, haha). Not only that, but I'm finally offering commissions with my work on Ko-Fi. If you enjoy my work and really want me to focus on this stuff, that's the best way to do it! If you're already in Sancay's server, consider voting for me — be cool if I win, haha. Either way, hope you enjoy this bot! \2665";
@@ -134,6 +157,18 @@
 .dx-row.r3 .dx-rn::after{content:"Chapter III"}.dx-row.r3 .dx-rt::after{content:var(--t-t3-title)}.dx-row.r3 .dx-rmore p::after{content:var(--t-t3-line)}.dx-row.r3 .thumb{background-image:var(--img-t3);background-position:var(--pos-t3)}
 .dx-row.r4 .dx-rn::after{content:"Chapter IV"}.dx-row.r4 .dx-rt::after{content:var(--t-t4-title)}.dx-row.r4 .dx-rmore p::after{content:var(--t-t4-line)}.dx-row.r4 .thumb{background-image:var(--img-t4);background-position:var(--pos-t4)}
 .dx-row.r5 .dx-rn::after{content:"Chapter V"}.dx-row.r5 .dx-rt::after{content:var(--t-t5-title)}.dx-row.r5 .dx-rmore p::after{content:var(--t-t5-line)}.dx-row.r5 .thumb{background-image:var(--img-t5);background-position:var(--pos-t5)}
+.dx-row.r6 .dx-rn::after{content:"Chapter VI"}.dx-row.r6 .dx-rt::after{content:var(--t-t6-title)}.dx-row.r6 .dx-rmore p::after{content:var(--t-t6-line)}.dx-row.r6 .thumb{background-image:var(--img-t6);background-position:var(--pos-t6)}
+.dx-row.r7 .dx-rn::after{content:"Chapter VII"}.dx-row.r7 .dx-rt::after{content:var(--t-t7-title)}.dx-row.r7 .dx-rmore p::after{content:var(--t-t7-line)}.dx-row.r7 .thumb{background-image:var(--img-t7);background-position:var(--pos-t7)}
+.dx-row.r8 .dx-rn::after{content:"Chapter VIII"}.dx-row.r8 .dx-rt::after{content:var(--t-t8-title)}.dx-row.r8 .dx-rmore p::after{content:var(--t-t8-line)}.dx-row.r8 .thumb{background-image:var(--img-t8);background-position:var(--pos-t8)}
+.dx-row.r9 .dx-rn::after{content:"Chapter IX"}.dx-row.r9 .dx-rt::after{content:var(--t-t9-title)}.dx-row.r9 .dx-rmore p::after{content:var(--t-t9-line)}.dx-row.r9 .thumb{background-image:var(--img-t9);background-position:var(--pos-t9)}
+.dx-row.r10 .dx-rn::after{content:"Chapter X"}.dx-row.r10 .dx-rt::after{content:var(--t-t10-title)}.dx-row.r10 .dx-rmore p::after{content:var(--t-t10-line)}.dx-row.r10 .thumb{background-image:var(--img-t10);background-position:var(--pos-t10)}
+
+/* --- chapter tags --- */
+.dx-tags{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap;margin-left:2px}
+.dx-chip{font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;padding:2px 7px;border:1px solid var(--dim);color:var(--dim);opacity:.75;transition:opacity .25s,color .25s,border-color .25s}
+.dx-row:hover .dx-chip{opacity:1}
+.dx-chip.nsfw{color:var(--red);border-color:var(--redd)}
+.dx-chip.collab{color:#d9a520;border-color:#8a6a12}
 .dx-note{display:flex;gap:16px;max-width:560px}
 .dx-note .bar{flex:none;width:2px;background:var(--dim)}
 .dx-note p{margin:0;font-size:15px;line-height:1.6;color:#9d9992;font-style:italic;white-space:pre-line}
@@ -146,8 +181,30 @@
 .dx-sanctum:hover{background:#4752c4;transform:translateY(-1px);box-shadow:0 4px 14px rgba(88,101,242,.35)}
 .dx-lore{display:inline-flex;align-items:center;gap:9px;padding:10px 22px;background:#d9a520;color:#171310!important;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid #a87d12;transition:background .2s,transform .15s,box-shadow .2s}
 .dx-lore:hover{background:#eab52f;transform:translateY(-1px);box-shadow:0 4px 14px rgba(217,165,32,.35)}
+.dx-sancay{display:inline-flex;align-items:center;gap:9px;padding:10px 22px;background:transparent;color:var(--bone)!important;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid var(--redd);transition:background .2s,transform .15s,border-color .2s}
+.dx-sancay:hover{background:rgba(195,31,46,.12);border-color:var(--red);transform:translateY(-1px)}
 .dx-lore::before{content:"";width:14px;height:14px;flex:none;background:#171310;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 6.2C10 4.8 7 4.3 4 5.2v12.9c3-.9 6-.4 8 1 2-1.4 5-1.9 8-1V5.2c-3-.9-6-.4-8 1Zm0 0v13' fill='none' stroke='%23000' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 6.2C10 4.8 7 4.3 4 5.2v12.9c3-.9 6-.4 8 1 2-1.4 5-1.9 8-1V5.2c-3-.9-6-.4-8 1Zm0 0v13' fill='none' stroke='%23000' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
 .dx-sanctum::before{content:"";width:15px;height:12px;flex:none;background:#fff;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 18'%3E%3Cpath d='M20.3 1.6A19 19 0 0 0 15.6 0l-.3.6a17 17 0 0 1 4.2 1.4c-5-2.4-11-2.4-16 0A17 17 0 0 1 7.7.6L7.4 0A19 19 0 0 0 2.7 1.6C-.3 6.1-1.1 10.5.3 14.8a19 19 0 0 0 5.8 3l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13 13 0 0 0 11.2 0l.5.4c-.6.4-1.2.7-1.9.9l1.2 2a19 19 0 0 0 5.8-3c.4-5-.9-9.3-2.4-12.2ZM8.1 12.2c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Zm7.8 0c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 18'%3E%3Cpath d='M20.3 1.6A19 19 0 0 0 15.6 0l-.3.6a17 17 0 0 1 4.2 1.4c-5-2.4-11-2.4-16 0A17 17 0 0 1 7.7.6L7.4 0A19 19 0 0 0 2.7 1.6C-.3 6.1-1.1 10.5.3 14.8a19 19 0 0 0 5.8 3l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13 13 0 0 0 11.2 0l.5.4c-.6.4-1.2.7-1.9.9l1.2 2a19 19 0 0 0 5.8-3c.4-5-.9-9.3-2.4-12.2ZM8.1 12.2c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Zm7.8 0c-1.1 0-2-1-2-2.3s.9-2.3 2-2.3 2 1 2 2.3-.9 2.3-2 2.3Z'/%3E%3C/svg%3E") center/contain no-repeat}
+/* --- LOREBOOK emblem panel --- */
+.dx-lorebox{margin:26px 0 0}
+.dx-lorelink{position:relative;display:block;text-decoration:none;padding:22px 18px 16px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,rgba(217,165,32,.07),transparent 55%),rgba(9,8,10,.5);transition:border-color .3s ease,background .3s ease}
+.dx-lorelink:hover{border-color:rgba(217,165,32,.4);background:radial-gradient(circle at 50% 40%,rgba(217,165,32,.13),transparent 58%),rgba(9,8,10,.5)}
+.dx-loreimg{width:100%;height:clamp(120px,18vw,190px);background:var(--img-lore) center/contain no-repeat;filter:drop-shadow(0 8px 18px rgba(0,0,0,.6));transition:transform .35s ease,filter .35s ease}
+.dx-lorelink:hover .dx-loreimg{transform:scale(1.03);filter:drop-shadow(0 10px 22px rgba(0,0,0,.7)) drop-shadow(0 0 14px rgba(217,165,32,.28))}
+.dx-lorecap{margin-top:12px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);transition:color .3s ease}
+.dx-lorelink:hover .dx-lorecap{color:#d9a520}
+
+/* --- DISCORD banner --- */
+.dx-dbox{margin:22px 0 0}
+.dx-dbanner{position:relative;display:block;overflow:hidden;text-decoration:none;border:1px solid rgba(88,101,242,.35);aspect-ratio:16/9;transition:border-color .3s ease,box-shadow .3s ease}
+.dx-dbanner:hover{border-color:rgba(88,101,242,.85);box-shadow:0 0 26px rgba(88,101,242,.22)}
+.dx-dimg{position:absolute;inset:0;background:var(--img-discord) center/cover no-repeat;filter:brightness(.8) saturate(.95);transition:filter .35s ease,transform .35s ease}
+.dx-dbanner:hover .dx-dimg{filter:brightness(1) saturate(1);transform:scale(1.02)}
+.dx-dhover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:18px;background:rgba(6,7,12,.82);opacity:0;transition:opacity .3s ease}
+.dx-dbanner:hover .dx-dhover{opacity:1}
+.dx-dhover b{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#fff;font-weight:500}
+.dx-dhover span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:1.5px;color:#c9c9d6}
+
 .dx-foot{text-align:center;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:3px;color:#3f3c39;text-transform:uppercase;margin-top:30px}
 .dx-foot::after{content:var(--t-foot)}
 @media(max-width:720px){
